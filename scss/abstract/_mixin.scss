@@ -1,0 +1,44 @@
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+//Tamaño de letra para las clases
+@mixin tamaño-letra-clases{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+//Tamaño de letra para las propiedades
+@mixin tamaño-letra-propiedades{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+
+
+
+
+@mixin tipografia-size-celeste{
+    color: cornflowerblue;
+    @include tamaño-letra-propiedades;
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin tipografia-size-naranja{
+    color:chocolate;
+    @include tamaño-letra-propiedades;
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin tipografia-size-blanco{
+    color:white;
+    @include tamaño-letra-propiedades;
+    font-family: "Roboto", sans-serif;
+}
